@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding for special characters -->
+  <meta charset="UTF-8">
+  <!-- Viewport meta tag for responsive design on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEasy - Home</title>
+  <!-- Link to our external CSS stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ==========================================
+       NAVIGATION BAR
+       Contains logo and navigation links
+       ========================================== -->
+  <header class="navbar">
+    <div class="container">
+      <!-- Website Logo/Brand Name -->
+      <h1 class="logo">ShopEasy</h1>
+      <!-- Navigation Menu -->
+      <nav>
+        <ul class="nav-links">
+          <!-- 'active' class highlights current page -->
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION
+       Welcome message and tagline
+       ========================================== -->
+  <section class="hero">
+    <h2>Welcome to ShopEasy</h2>
+    <p>Discover amazing products at great prices</p>
+  </section>
+
+  <!-- ==========================================
+       CATEGORIES SECTION
+       Displays product categories as clickable cards
+       Categories are dynamically inserted by JavaScript
+       ========================================== -->
+  <section class="categories container">
+    <h2>Shop by Category</h2>
+    <!-- JavaScript will insert category cards here -->
+    <div class="category-grid" id="category-container">
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FEATURED PRODUCTS SECTION
+       Shows a selection of featured products
+       Products are dynamically inserted by JavaScript
+       ========================================== -->
+  <section class="featured container">
+    <h2>Featured Products</h2>
+    <!-- JavaScript will insert product cards here -->
+    <div class="product-grid" id="featured-container">
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       Copyright information
+       ========================================== -->
+  <footer class="footer">
+    <p>&copy; 2026 ShopEasy. All rights reserved.</p>
+  </footer>
+
+  <!-- ==========================================
+       JAVASCRIPT FILES
+       IMPORTANT: data.js must load before main.js
+       because main.js uses the products array
+       ========================================== -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

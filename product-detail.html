@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding for special characters -->
+  <meta charset="UTF-8">
+  <!-- Viewport meta tag for responsive design on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEasy - Product Details</title>
+  <!-- Link to our external CSS stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ==========================================
+       NAVIGATION BAR
+       Same as other pages for consistent navigation
+       ========================================== -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">ShopEasy</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       MAIN CONTENT
+       Displays detailed product information
+       ========================================== -->
+  <main class="container">
+    <!-- Back to Products Link -->
+    <a href="products.html" class="back-link">&larr; Back to Products</a>
+    
+    <!-- ==========================================
+         PRODUCT DETAIL SECTION
+         Product details are dynamically inserted by JavaScript
+         ========================================== -->
+    <div class="product-detail" id="product-detail">
+      <!-- JavaScript will render product details here -->
+    </div>
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       Copyright information
+       ========================================== -->
+  <footer class="footer">
+    <p>&copy; 2026 ShopEasy. All rights reserved.</p>
+  </footer>
+
+  <!-- ==========================================
+       JAVASCRIPT FILES
+       data.js must load before product-detail.js
+       ========================================== -->
+  <script src="js/data.js"></script>
+  <script src="js/product-detail.js"></script>
+</body>
+</html>
